@@ -1,0 +1,61 @@
+/* MAIN */
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+  local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"),
+  local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+  font-family: "system", sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  -webkit-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+#container {
+  margin-top: 5.5em;
+}
+
+#brand {
+  position: fixed;
+  top: 0;
+  margin: 1.5em;
+  width: calc(100vw - 3em);
+  text-align: center;
+}
+
+#brand img {
+  height: 2em;
+}
+
+article {
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+article h1 {
+  margin: 0;
+}
+
+article section {
+  display: inline-block;
+  padding: 1em;
+}
+
+article p {
+  margin-top: 0;
+}
