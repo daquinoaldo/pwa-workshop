@@ -1,6 +1,6 @@
 # PWA for Dummies @ Pisa DevFest 1.0
 
-![DevFest logo](https://devfest.gdgpisa.it/images/logo-monochrome.svg)
+[![DevFest logo](https://devfest.gdgpisa.it/images/logo-monochrome.svg)](https://devfest.gdgpisa.it)
 
 [Slides.pdf](Slides.pdf) - [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTWy4J_FDOR2TTLa0bKByJ8eTK6DYJAvo8tEC8B4AkV0OsBBXN4iGtAqNS4SZY5rREy4pspSASH9Y5G/pub)
 
