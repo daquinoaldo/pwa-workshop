@@ -14,3 +14,12 @@
 6. Replace the images in `/images` and `/favicon.ico`.
 7. Use [Lighthouse](https://developers.google.com/web/tools/lighthouse) to test the correctness and performance.
 8. Check the solution in [1-pwa](../1-pwa).
+
+## Step 1b: try different caching strategies
+1. Look at the Service Worker and understand how the cache-first strategy is implemented.
+2. Take a look to [The Offline Cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook) to understand the caches strategies.
+3. Edit `serviceWorker.js`  to obtain a network-first strategy, with cache as fallback.
+4. Test the result using [https-localhost](https://github.com/daquinoaldo/https-localhost) and the network tab of Chrome Dev Tools (F12) or the corresponding tool of your browser.
+5. Check the solution in [1-pwa/serviceWorker-network-first.js](../1-pwa/serviceWorker-network-first.js).
+6. Compare the speed of both approaches.
+7. Try other strategies that may better fit your needs.
