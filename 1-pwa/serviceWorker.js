@@ -16,7 +16,7 @@ const files = [
   "/manifest.json"
 ]
 
-const cacheName = "v0.1.0-alpha"
+const cacheName = "v0.1.0"
 
 // listen for install event and cache all files
 self.addEventListener("install", function(event) {

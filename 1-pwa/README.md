@@ -1,6 +1,6 @@
-# PWA for Dummies @ Pisa DevFest 1.0
+# PWA from scratch - Oct 30, 2019 @ GATE Pisa
 
-# Step 2: web permissions
+## Step 2: web permissions
 In this step you find the PWA implemented using the instructions described in the step 0.
 
 Now we will see how to use web permissions to improve our app.  

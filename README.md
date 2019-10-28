@@ -1,4 +1,4 @@
-# PWA for Dummies @ Pisa DevFest 1.0
+# PWA from scratch - Oct 30, 2019 @ GATE Pisa
 
 [![DevFest logo](https://devfest.gdgpisa.it/images/logo-monochrome.svg)](https://devfest.gdgpisa.it)
 
@@ -15,12 +15,14 @@ It is organized in three steps, divided in 3 folders.
 ### How to
 - Download the repository: `git clone https://github.com/daquinoaldo/PWA-workshop`.
 - Copy the `0-skeleton` folder to a `working` folder to preserve the original one.
-- Follow the steps in [working/README.md](0-skeleton/README.md).
+- Follow the steps in [0-skeleton/README.md](0-skeleton/README.md).
+- Continue the tutorial following the README in each step.
 
 ### Useful links
 - [https-localhost](https://github.com/daquinoaldo/https-localhost): use it to test your PWA on localhost over an https connection.
 - [blog-pwa](https://github.com/daquinoaldo/blog-pwa): a PWA for a WordPress blog. It is a concrete example of the power of PWAs, applied to a more popular and useful use case. [Live demo](https://pwa.demopress.aldodaquino.com).
 - [What Web Can Do Today](https://whatwebcando.today): a curated list of permissions available through the browsers. Includes useful code examples.
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse): a powerful tool (built-in in Chrome dev tools) to test a PWA performance.
+- [Google Developer page on PWAs](https://developers.google.com/web/progressive-web-apps): official PWA developer portal.
 
-You can visit my portfolio at [aldodaquino.com](https://aldodaquino.com).
+You can visit my portfolio at [ald.ooo](https://ald.ooo).
