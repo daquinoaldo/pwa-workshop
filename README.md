@@ -1,16 +1,16 @@
 # PWA from scratch - Oct 30, 2019 @ GATE Pisa
 
-[![DevFest logo](https://devfest.gdgpisa.it/images/logo-monochrome.svg)](https://devfest.gdgpisa.it)
+I created this repository for a workshop during the [GDG DevFest Pisa 2019](https://2019.devfest.gdgpisa.it) and then I extended it for a more in-depth talk.
+- [Slides PWA for dummies](pwa4dummies.pdf) @ GDG DevFest Pisa 2019
+- [Slides PWA from scratch](pwa-from-scratch.pdf) @ GATE Pisa, Oct 30, 2019
 
-[Slides.pdf](Slides.pdf) - [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTWy4J_FDOR2TTLa0bKByJ8eTK6DYJAvo8tEC8B4AkV0OsBBXN4iGtAqNS4SZY5rREy4pspSASH9Y5G/pub)
-
-I created this repository for a workshop during the [GDG DevFest Pisa 2019](https://devfest.gdgpisa.it).  
 The aim is to transform an existent weather website into a PWA.
 
-It is organized in three steps, divided in 3 folders.
+The codelab is organized in four steps, divided in 4 folders on this repo.
 - [0-skeleton](0-skeleton): the weather website.
-- [1-pwa](1-pwa): adds the sevice worker, the manifest and some headers for Apple/MS devices.
+- [1-pwa](1-pwa): adds the service worker, the manifest and some headers for Apple/MS devices.
 - [2-location](2-location): uses the location permissions.
+- [3-ssr](3-ssr): server side rendering.
 
 ### How to
 - Download the repository: `git clone https://github.com/daquinoaldo/PWA-workshop`.
@@ -25,4 +25,6 @@ It is organized in three steps, divided in 3 folders.
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse): a powerful tool (built-in in Chrome dev tools) to test a PWA performance.
 - [Google Developer page on PWAs](https://developers.google.com/web/progressive-web-apps): official PWA developer portal.
 
-You can visit my portfolio at [ald.ooo](https://ald.ooo).
+You can visit my portfolio at [ald.ooo](https://ald.ooo). Here you can find my contacts if you need help!
+
+Happy coding!
