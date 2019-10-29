@@ -1,6 +1,20 @@
+// This is a copy of app.js of the 0-skeleton, edited to work as a backend module.
+// Just few changes were needed. It is a good choice to have SSR by design, so that
+// you can write the initial app.js to work both as server module and client library.
+
+// Import the fetch API in Node.js
+const fetch = require('node-fetch')
+
 const API_KEY = "3117f78775abe4ac9ea0e2e67c840c92" // demo
 
-function setContent(content) {
+const milan = {
+  coords: {
+    latitude: 45.46,
+    longitude: 9.19
+  }
+}
+
+function setContent(content, document) {
   const container = document.getElementById("container")
   while (container.firstChild)
     container.removeChild(container.firstChild)
@@ -13,7 +27,8 @@ function getWeather(lat, lon) {
   .then(response => response.json())
 }
 
-function setWeather(weather) {
+// document is a parameter, since is not the document of the browser but our own
+function setWeather(weather, document) {
   const article = document.createElement("article")
 
   const h1 = document.createElement("h1")
@@ -39,25 +54,12 @@ function setWeather(weather) {
   mainSec.appendChild(humidity)
   article.appendChild(mainSec)
 
-  setContent(article)
+  setContent(article, document)
 }
 
-function getPosition() {
-  return new Promise(resolve => {
-    if ("geolocation" in navigator)
-      navigator.geolocation.getCurrentPosition(resolve)
-    else resolve(undefined)
-  })
+// Makes the milan object and this two functions available in the server
+module.exports = {
+  milan,
+  getWeather,
+  setWeather
 }
-
-getPosition().then(position =>
-  getWeather(position.coords.latitude, position.coords.longitude)
-  .then(setWeather))
-
-/* Commented for easy tests
-  // Install service worker
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/serviceWorker.js', { scope: '/' })
-      .then(reg => console.info("Service worker registered."))
-  }
-*/

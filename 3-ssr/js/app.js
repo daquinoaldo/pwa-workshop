@@ -1,7 +1,7 @@
 const API_KEY = "3117f78775abe4ac9ea0e2e67c840c92" // demo
 
 function setContent(content) {
-  const container = document.getElementById("container")
+  const container = document.getElementById("container")  
   while (container.firstChild)
     container.removeChild(container.firstChild)
   container.appendChild(content)

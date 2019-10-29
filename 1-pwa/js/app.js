@@ -7,32 +7,24 @@ const milan = {
   }
 }
 
-const container = document.getElementById("container")
-
 function setContent(content) {
+  const container = document.getElementById("container")
   while (container.firstChild)
     container.removeChild(container.firstChild)
   container.appendChild(content)
 }
 
 function getWeather(lat, lon) {
-  return new Promise(resolve => {
-    url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric&APPID=" + API_KEY
-    const request = new XMLHttpRequest()
-    request.onreadystatechange = function() {
-      if (request.readyState === XMLHttpRequest.DONE && request.status === 200)
-        resolve(JSON.parse(request.response))
-    }
-    request.open("GET", url, true)
-    request.send()
-  })
+  url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric&APPID=" + API_KEY
+  return fetch(url)
+  .then(response => response.json())
 }
 
 function setWeather(weather) {
   const article = document.createElement("article")
 
   const h1 = document.createElement("h1")
-  h1.innerText = weather.name
+  h1.appendChild(document.createTextNode(weather.name))
   article.appendChild(h1)
 
   const weatherSec = document.createElement("section")
@@ -41,23 +33,23 @@ function setWeather(weather) {
   img.alt = weather.weather[0].main
   weatherSec.appendChild(img)
   const description = document.createElement("p")
-  description.innerText = weather.weather[0].main
+  description.appendChild(document.createTextNode(weather.weather[0].main))
   weatherSec.appendChild(description)
   article.appendChild(weatherSec)
 
   const mainSec = document.createElement("section")
   const temp = document.createElement("p")
-  temp.innerText = "Temperature: " + weather.main.temp + " °C"
+  temp.appendChild(document.createTextNode("Temperature: " + weather.main.temp + " °C"))
   mainSec.appendChild(temp)
   const humidity = document.createElement("p")
-  humidity.innerText = "Humidity: " + weather.main.humidity + "%"
+  humidity.appendChild(document.createTextNode("Humidity: " + weather.main.humidity + "%"))
   mainSec.appendChild(humidity)
   article.appendChild(mainSec)
 
   setContent(article)
 }
 
-getWeather(milan.coords.latitude, milan.coords.longitude)
+getWeather(app.milan.coords.latitude, app.milan.coords.longitude)
   .then(setWeather)
 
 // Install service worker
