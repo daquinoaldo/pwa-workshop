@@ -49,11 +49,5 @@ function setWeather(weather) {
   setContent(article)
 }
 
-getWeather(app.milan.coords.latitude, app.milan.coords.longitude)
+getWeather(milan.coords.latitude, milan.coords.longitude)
   .then(setWeather)
-
-// Install service worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/serviceWorker.js', { scope: '/' })
-    .then(reg => console.info("Service worker registered."))
-}

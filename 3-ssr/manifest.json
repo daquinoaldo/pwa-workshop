@@ -1,7 +1,7 @@
 {
   "name": "Weather",
   "short_name": "Weather",
-  "description": "Easly check the weather in your current location",
+  "description": "Easily check the weather in your current location",
   "author": "Aldo D'Aquino",
   "start_url": "/",
   "display": "standalone",

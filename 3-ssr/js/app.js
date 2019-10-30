@@ -53,11 +53,3 @@ function getPosition() {
 getPosition().then(position =>
   getWeather(position.coords.latitude, position.coords.longitude)
   .then(setWeather))
-
-/* Commented for easy tests
-  // Install service worker
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/serviceWorker.js', { scope: '/' })
-      .then(reg => console.info("Service worker registered."))
-  }
-*/
