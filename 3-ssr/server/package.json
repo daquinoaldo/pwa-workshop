@@ -16,6 +16,6 @@
     "express": "^4.17.1",
     "https-localhost": "^4.4.1",
     "jsdom": "^15.2.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.7"
   }
 }
