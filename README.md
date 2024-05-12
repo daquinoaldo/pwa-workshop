@@ -1,8 +1,8 @@
 # PWA from scratch - Oct 30, 2019 @ GATE Pisa
 
 I created this repository for a workshop during the [GDG DevFest Pisa 2019](https://2019.devfest.gdgpisa.it) and then I extended it for a more in-depth talk.
-- [Slides PWA for dummies](pwa4dummies.pdf) @ GDG DevFest Pisa 2019
-- [Slides PWA from scratch](pwa-from-scratch.pdf) @ GATE Pisa, Oct 30, 2019
+- [Slides PWA for dummies](slides/pwa4dummies.pdf) @ GDG DevFest Pisa 2019
+- [Slides PWA from scratch](slides/pwa-from-scratch.pdf) @ GATE Pisa, Oct 30, 2019
 
 The aim is to transform an existent weather website into a PWA.
 
