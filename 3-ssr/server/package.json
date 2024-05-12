@@ -13,7 +13,7 @@
   "author": "Aldo D'Aquino",
   "license": "AGPL-3.0",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "https-localhost": "^4.4.1",
     "jsdom": "^15.2.0",
     "node-fetch": "^2.6.0"
